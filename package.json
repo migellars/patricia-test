@@ -19,9 +19,9 @@
   "author": "Migel",
   "license": "ISC",
   "bugs": {
-    "url": "https://migellars/github.com/migellars/patricia-Int/issues"
+    "url": "https://github.com/migellars/patricia-test.git/issues"
   },
-  "homepage": "https://github.com/migellars/patricia-Int#readme",
+  "homepage": "https://github.com/migellars/patricia-test#readme",
   "dependencies": {
     "async-await": "^0.1.40",
     "axios": "^0.21.1",
