@@ -1,3 +1,2 @@
 node_modules
-uncaughtException.log
-logfile.log
+.*log
