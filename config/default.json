@@ -1,27 +1,12 @@
 {
   "environment": "dev",
   "app_name": "Kassandah",
-  "dbMlab": "mongodb://localhost:27017/papdb",
-  "port": "9700",
+  "db_conn": "mongodb://localhost:27017/patDb",
+  "port": "5000",
   "jwtPrivateKey": "isiLRTBlmSt0Y9qjtU6NTuHIP7xU2XoivazUXrfePFGwbhb7mtrNkqLBS3YRrWam",
   "jwtRefreshTokenPrivateKey": "RIaPfryYBa6tNU9rzEFoxgipFZaJOfCkgdD8elUTu5SsQKDb0HapSIzabQNm8axa",
   "requiresAuth": true,
   "bcryptSalt": "$2b$10$oPd2gJERglqNiWXf3sYwIu",
   "APP_URL": "http://localhost:9700",
-  "MQ_CONN_URL": "amqps://yzhrvflq:Yl7a71T_yJ6KYXg4JezXVYYdArIJUGPQ@rattlesnake.rmq.cloudamqp.com/yzhrvflq",
-  "app_domain": "http://localhost:9700/",
-  "S3_ACCESS_KEY": "AKIARDEE2LJXWDNL367T",
-  "S3_SECRET_KEY": "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",
-  "S3_BUCKET_REGION": "eu-west-2",
-  "S3_BUCKET_NAME": "gigpap",
-  "ses": {
-    "senderId": "anselm.mba@thegiggroupng.com"
-  },
-  "email": {
-    "verifyEmailSubject": "Verify Your Email",
-    "phaseApprovalSubject": "Approve Requisition",
-    "resetPasswordSubject": "Reset Your Password",
-    "phaseRejectionSubject": "Requisition Rejected"
-  },
-  "approver-role": "approver"
+  "app_domain": "http://localhost:9700/"
 }

@@ -3,11 +3,9 @@ const Joi = require("joi");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 
-const { Role } = require("../models/role");
 
 const UserSchema = new mongoose.Schema({
     userId: String,
-    roles: [{ type: mongoose.Schema.Types.ObjectId, ref: "Role", required: true }],
     firstName: { type: String, default: "" },
     lastName: { type: String, default: "" },
     phone: { type: String, default: "" },
@@ -15,7 +13,7 @@ const UserSchema = new mongoose.Schema({
     password: { type: String, default: "" },
     resetPasswordToken: { type: String },
     resetPasswordExpires: { type: Date },
-    isVerified: { type: Boolean, default: false },
+    isVerified: { type: Boolean, default: true },
     accessToken: { type: String, default: "" },
     refreshToken: { type: String, default: "" },
     status: { type: String, enum: ["active", "inactive", "blocked"], default: "inactive" },
@@ -28,7 +26,6 @@ const User = mongoose.model("User", UserSchema);
 
 const userAuditSchema = new mongoose.Schema({
     userId: String,
-    role: String,
     firstName: String,
     lastName: String,
     phone: String,
@@ -56,7 +53,6 @@ function validateUserPost(user) {
 
 function validateUserPostByAdmin(user) {
     const schema = {
-        role: Joi.string().required(),
         firstName: Joi.string().min(2).max(200).required(),
         lastName: Joi.string().min(2).max(200).required(),
         password: Joi.string().min(6).max(20).required(),
@@ -75,7 +71,6 @@ function validateEmail(user) {
 
 function validateUserPut(user) {
     const schema = {
-        role: Joi.string(),
         userId: Joi.string().min(1).max(200),
         firstName: Joi.string().min(2).max(200),
         lastName: Joi.string().min(2).max(200),

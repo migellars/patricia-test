@@ -47,7 +47,7 @@ const USER_CONSTANTS = {
     "We were unable to find a valid token. Your token may have expired.",
   USER_ALREADY_VERIFIED: "This user has already been verified.",
   VERIFICATION_EMAIL_SENT:
-    "Please confirm yourself by clicking on verify user button sent to your email",
+    "Please confirm yourself by clicking on verify user button sent to your email :-)",
   RESET_PASSWORD_EMAIL_SENT: "A reset email has been sent to your email",
   PASSWORD_MISMATCH: "Passwords do not match",
   NOT_YET_VERIFIED: "Your account has not been verified.",
