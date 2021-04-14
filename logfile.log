@@ -38,3 +38,5 @@
 {"level":"info","message":"Connected to mongodb://localhost:27017/patDb...","timestamp":"2021-04-14T12:18:40.658Z"}
 {"level":"info","message":"Listening on port 5000...","timestamp":"2021-04-14T12:18:58.060Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/patDb...","timestamp":"2021-04-14T12:18:58.149Z"}
+{"level":"info","message":"Listening on port 5000...","timestamp":"2021-04-14T12:44:36.917Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/patDb...","timestamp":"2021-04-14T12:44:37.008Z"}
